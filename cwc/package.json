@@ -1,6 +1,11 @@
 {
   "name": "cwc",
   "displayName": "Copy With Context",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Skippou/cwc"
+  },
+  "publisher": "TopoSoftware",
   "description": "Copies code with context for LLMs like ChatGPT.",
   "version": "0.0.1",
   "engines": {
