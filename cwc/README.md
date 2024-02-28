@@ -1,71 +1,48 @@
-# cwc README
+# Copy with Context Extension for VS Code
 
-This is the README for your extension "cwc". After writing up a brief description, we recommend including the following sections.
+This Visual Studio Code extension enhances your productivity by allowing you to copy a block of code with its related context, such as function definitions one level deep, directly to your clipboard. This is particularly useful for developers who frequently need to share or review code snippets with full context or work on integrating pieces of code from one project into another.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- Copy Code with Context: Select a piece of code and copy it along with its related function definitions to the clipboard.
+- Relative Path Information: Includes comments with relative paths for each function definition, making it easier to locate the source file in your project.
+- Avoids Duplicates: Ensures that function definitions are not duplicated in the copied text, even if they are referenced multiple times within the selection.
 
-For example if there is an image subfolder under your extension project workspace:
+## How to Use
 
-\!\[feature X\]\(images/feature-x.png\)
+1. Select Code: Highlight the block of code you wish to copy in your editor.
+2. Execute Command: Open the Command Palette (Ctrl+Shift+P on Windows/Linux, Cmd+Shift+P on macOS) and type Copy with Extended Context. Hit Enter to execute.
+3. Paste Anywhere: Paste the copied code along with its context into any document or editor.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Installation
 
-## Requirements
+Install this extension directly from the Visual Studio Code Marketplace:
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. Open Visual Studio Code.
+2. Navigate to the Extensions view by clicking on the square icon on the sidebar or pressing Ctrl+Shift+X.
+3. Search for "Copy with Extended Context".
+   Click on the Install button.
 
-## Extension Settings
+Alternatively, you can install it via the Command Palette:
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+1. Open the Command Palette (Ctrl+Shift+P or Cmd+Shift+P).
+1. Type ext install followed by the extension name, for example: ext install my-publisher.copy-with-extended-context.
+   Requirements
+   No specific requirements. This extension should work with any standard Visual Studio Code installation.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+- Currently in beta; unexpected behavior may occur for complex code structures or deeply nested function calls.
+  Contributing
+  Feedback and contributions are welcome. Please feel free to submit issues or pull requests to the [GitHub repository](https://github.com/Skippou/cwc).
+
+## License
+
+This extension is licensed under the Apache 2.0 License.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+0.0.1
+Initial beta release.
+Copy code selections with context.
+Include relative path comments for external definitions.
